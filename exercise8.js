@@ -1,5 +1,3 @@
-function discount(totalAmount) {
-  const discount = totalAmount > 100 ? totalAmount * 0.1 : totalAmount * 0.05;
-
-  return discount;
+function discount(amount) {
+  return amount > 100 ? amount * 0.1 : amount * 0.05;
 }
