@@ -1,13 +1,13 @@
 function flatten(arr) {
-  return arr.flat(checkNesting(arr));
+  return arr.flat(getDepth(arr));
 }
 
-function checkNesting(arr) {
+function getDepth(arr) {
   if (!Array.isArray(arr)) return 0;
   let maxDepth = 0;
   for (let element of arr) {
     if (Array.isArray(element)) {
-      const depth = checkNesting(element);
+      const depth = getgDepth(element);
       if (depth > maxDepth) {
         maxDepth = depth;
       }

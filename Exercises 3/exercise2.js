@@ -1,4 +1,4 @@
-const checkIfPrime = (num) => {
+const isPrime = (num) => {
   let factors = [];
   for (let i = 1; i <= num / 2; i++) {
     if (num % i === 0) {
